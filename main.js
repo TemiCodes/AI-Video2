@@ -18,7 +18,7 @@ function preload() {
 function draw() {
     image(video, 0, 0, 350, 350)
     if (status != "") {
-        objectdetecter.detect(video, gotresults)
+        objectdetector.detect(video, gotresults)
         for (let i = 0; i < objects.length; i++) {
             document.getElementById("Status").innerHTML = "Status: detected"
             document.getElementById("Complete").innerHTML = "Number of objects: " + objects.length
